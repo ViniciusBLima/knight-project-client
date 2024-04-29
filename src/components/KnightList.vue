@@ -21,7 +21,7 @@
           <td>{{ knight.keyAttribute }}</td>
           <td>{{ calculateAttack(knight) }}</td>
           <td>{{ calculateExp(knight.birthday) }}</td>
-          <td>
+          <td class="actions">
             <button @click="editKnight(knight)">Edit Nickname</button>
             <button @click="deleteKnight(knight._id)">Delete</button>
           </td>
@@ -105,8 +105,6 @@ export default {
       const knightData = {
         name: this.editingKnight.name
       };
-
-      // Atualiza dados do cavaleiro no servidor
       fetch(`http://localhost:3000/knights/${this.editingKnight._id}`, {
         method: 'PUT',
         headers: {
@@ -152,4 +150,8 @@ export default {
 </script>
 
 <style scoped>
+  .actions{
+    display: flex;
+    gap: 10px;
+  }
 </style>

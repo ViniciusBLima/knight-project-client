@@ -37,13 +37,11 @@ body {
   color: #333;
 }
 
-h1,
-h2 {
+h1, h2 {
   color: #333;
 }
 
-.form-group,
-.table-container {
+.form-group, .table-container {
   background-color: #fff;
   padding: 20px;
   border-radius: 8px;
@@ -51,13 +49,11 @@ h2 {
   margin-bottom: 20px;
 }
 
-input[type="text"],
-input[type="number"],
-select,
-button {
+input[type="text"], input[type="number"], select {
   width: 100%;
   padding: 8px;
   margin-top: 5px;
+  margin-bottom: 16px; 
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
@@ -91,10 +87,10 @@ li {
 table {
   width: 100%;
   border-collapse: collapse;
+  margin-bottom: 20px; 
 }
 
-th,
-td {
+th, td {
   text-align: left;
   padding: 8px;
   border: 1px solid #ddd;
@@ -120,10 +116,10 @@ tr:hover {
   align-items: flex-start;
 }
 
-.knight-form-holder{
+.knight-form-holder {
   display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 </style>

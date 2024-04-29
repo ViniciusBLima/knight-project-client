@@ -2,9 +2,11 @@
     <div v-if="isVisible" class="modal">
       <div class="modal-content">
         <span class="close" @click="closeModal">&times;</span>
-        <h2>Edit Knight nickname</h2>
-        <input v-model="nickname" placeholder="Digite o novo apelido">
-        <button @click="save">Save</button>
+        <div class="modal-holder">
+          <h2>Edit Knight nickname</h2>
+          <input v-model="nickname" placeholder="Digite o novo apelido">
+          <button @click="save">Save</button>
+        </div>
       </div>
     </div>
   </template>
@@ -71,6 +73,10 @@
     color: black;
     text-decoration: none;
     cursor: pointer;
+  }
+  .modal-holder{
+    display: flex;
+    flex-direction: column;
   }
   </style>
   

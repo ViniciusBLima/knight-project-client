@@ -11,7 +11,7 @@
         <input type="text" id="nickname" v-model="knight.nickname" />
       </div>
       <div class="form-group">
-        <label for="birthday">Birthday:</label>
+        <label for="birthday">Age:</label>
         <input type="number" min="0" id="birthday" v-model="knight.birthday" />
       </div>
       <div class="form-group">
